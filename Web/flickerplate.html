@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<script src="jquery.js"></script>
+	<script src="flickerplate.js"></script>
+	<script src="modernizr.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="flickerplate.css">
+	<style>
+		#header{
+			width:100%;
+		}
+	</style>
+</head>
+<body>
+
+		<div id="header">
+		
+		</div>
+	<div class="flicker-example" data-block-text="false">
+		
+		<ul>
+			
+			<li data-background="images/Banner.png">
+
+			</li>
+			
+			<li data-background="images/Banner.png">
+
+			</li>
+			
+			<li data-background="images/Banner.png">
+
+			</li>
+			
+		</ul>
+		
+	</div>
+	<script>
+/*	$("#header").load("lib/header/header.html")*/
+			$('.flicker-example').flicker({
+		theme : 'dark',
+		
+		auto_flick_delay:3
+	});
+ 
+	</script>
+
+</body>
+</html>

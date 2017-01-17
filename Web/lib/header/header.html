@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<style>
+		ul,li{list-style: none;}
+	</style>
+ <link rel="stylesheet" href="lib/header/css/dropkick.css" type="text/css">
+  <script src="lib/js/jquery.js"></script>
+  <script src="lib/header/js/dropkick.js"></script>
+</head>
+<body style="width:1920px">
+
+		<div id="LangBox">
+			<div id="LangChoose">
+        		<select name="color" class="change" tabindex="4">
+
+            		<option value="">Please select a color</option>
+
+            		<option value="#0084c7">Blue</option>
+
+            		<option value="#E15A01">Orange</option>
+
+            		<option value="#604A42">Brown</option>
+
+        		</select>	
+			</div>
+		</div>
+
+		<div id="TopBox">
+			<div id="TopLogo">
+				<img src="images/LOGO.png" >
+			</div>
+			<div id="TopMenu">
+			<ul>
+				<li>
+				<a href="">Download</a>
+				</li>
+				<li>
+				<a href="">I'm Teacher</a>
+				</li>
+				<li>
+				<a href="">Sign in</a>
+				</li>
+				<li>
+				<a href="">Sign up Free</a>
+				</li>												
+			</ul>
+			</div>
+		</div>
+
+
+<script>
+	      $('.change').dropkick({
+
+        change: function (value, label) {
+
+          alert('You picked: ' + label + ':' + value);
+
+        }
+
+      });
+
+</script>
+<style>
+	#LangBox{
+		width: 100%;
+		height: 34px;
+		background-color: #4b4b4b;
+	}
+	#LangChoose{
+		float: right;
+		margin-right: 30px; 
+	}
+	#TopBox{
+		width: 100%;
+		height: 120px;
+		background-color: #67c5f0;
+  		display: -webkit-flex;
+  		display:flex;
+  		justify-content:space-between;
+  -webkit-align-items: center;
+          align-items: center;		
+	}
+	#TopLogo{
+		margin-left: 122px;
+	}
+	#TopMenu{
+		width:500px;
+		height: 20px;
+		width: 600px;		
+		display:flex;
+	}
+	#TopMenu ul {
+				height: 20px;
+		        display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-right: 50px;
+	}
+#TopMenu ul li{	height: 20px;		        
+                width: 130px; /*每个元素的初始化宽度*/
+                text-align: center;
+                flex:auto;  
+	}
+#TopMenu ul li a{
+		text-decoration:none;
+		color: #fff;
+		font-size:18px;
+		font-family: Microsoft Yahei; /* 微软雅黑 */
+}
+</style>
+</body>
+</html>
